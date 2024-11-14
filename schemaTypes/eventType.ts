@@ -1,35 +1,34 @@
-import {ArchiveIcon} from '@sanity/icons'
+import {CalendarIcon} from '@sanity/icons'
 import {defineField, defineType} from 'sanity'
 
-export const archiveType = defineType({
-  name: 'archive',
+export const eventType = defineType({
+  name: 'event',
   type: 'document',
-  icon: ArchiveIcon,
+  icon: CalendarIcon,
   fields: [
-    defineField({name: 'hideOnWebsite', type: 'boolean', initialValue: false}),
-    defineField({name: 'title', type: 'string', readOnly: true, validation: (Rule) => Rule.required()}),
+    defineField({name: 'title', type: 'string', validation: (Rule) => Rule.required()}),
+    defineField({name: 'date', type: 'datetime'}),
+    defineField({name: 'venue', type: 'string'}),
+    defineField({name: 'eventImage', type: 'image'}),
     defineField({
       name: 'content',
-      type: 'portableText',
-      readOnly: true
+      type: 'array',
+      of: [{type: 'block'}, {type: 'image'}, {type: 'externalImage'}],
+      validation: (Rule) => Rule.required(),
     }),
-    defineField({name: 'featuredMedia', type: 'image', readOnly: true}),
-    defineField({name: 'slug', type: 'slug', readOnly: true}),
-    defineField({name: 'wordpressURL', type: 'url', readOnly: true}),
-    defineField({name: 'created', type: 'datetime', readOnly: true}),
-    defineField({name: 'modified', type: 'datetime', readOnly: true}),
+    defineField({name: 'slug', type: 'slug', options: {source: 'title'}, validation: (Rule) => Rule.required()}),
   ],
   preview: {
     select: {
       title: 'title',
-      subtitle: 'created',
+      subtitle: 'date',
       media: 'featuredMedia',
     },
     prepare(selection) {
       const {title, subtitle, media} = selection
       const subtitleFormatted = subtitle ? new Date(subtitle).toLocaleDateString() : '';
       return { ...selection, subtitle: subtitleFormatted }
-    }
+    },
   },
 })
 
