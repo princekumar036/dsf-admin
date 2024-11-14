@@ -8,7 +8,7 @@ export default defineConfig({
   title: 'dsf-website',
 
   projectId: 'smjngdxm',
-  dataset: 'production',
+  dataset: 'db-dsf-website-9xf65r',
 
   plugins: [structureTool(), visionTool()],
 

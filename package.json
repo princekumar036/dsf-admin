@@ -15,18 +15,30 @@
     "sanity"
   ],
   "dependencies": {
+    "@sanity/client": "^6.22.4",
+    "@sanity/icons": "^3.4.0",
+    "@sanity/schema": "^3.64.1",
+    "@sanity/uuid": "^3.0.2",
     "@sanity/vision": "^3.63.0",
+    "axios": "^1.7.7",
+    "he": "^1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sanity": "^3.63.0",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
+    "@sanity/block-tools": "^3.64.0",
     "@sanity/eslint-config-studio": "^4.0.0",
     "@types/react": "^18.0.25",
+    "@wordpress/block-serialization-default-parser": "^5.11.0",
     "eslint": "^8.6.0",
+    "html-entities": "^2.5.2",
+    "jsdom": "^25.0.1",
+    "p-limit": "^6.1.0",
     "prettier": "^3.0.2",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "wp-types": "^4.66.1"
   },
   "prettier": {
     "semi": false,
