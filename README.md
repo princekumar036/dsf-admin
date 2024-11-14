@@ -1,9 +1,7 @@
-# Sanity Clean Content Studio
+# Admin Area 
 
-Congratulations, you have now installed the Sanity Content Studio, an open-source real-time content editing environment connected to the Sanity backend.
+> Made with Sanity
 
-Now you can do the following things:
+An admin area to manage the content on Website
 
-- [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
-- [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
-- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
+for DSF Website
