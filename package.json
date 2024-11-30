@@ -19,11 +19,11 @@
     "@sanity/icons": "^3.4.0",
     "@sanity/schema": "^3.64.1",
     "@sanity/uuid": "^3.0.2",
-    "@sanity/vision": "^3.63.0",
+    "@sanity/vision": "^3.65.1",
     "axios": "^1.7.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "sanity": "^3.64.1",
+    "sanity": "^3.65.1",
     "styled-components": "^6.1.13"
   },
   "devDependencies": {
