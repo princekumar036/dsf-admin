@@ -9,6 +9,7 @@ export const eventType = defineType({
     defineField({name: 'title', type: 'string', validation: (Rule) => Rule.required()}),
     defineField({name: 'date', type: 'datetime'}),
     defineField({name: 'venue', type: 'string'}),
+    defineField({name: 'guests', type: 'array', of: [{type: 'string'}]}),
     defineField({name: 'eventImage', type: 'image'}),
     defineField({
       name: 'content',

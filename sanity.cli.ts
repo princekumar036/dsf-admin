@@ -3,7 +3,7 @@ import {defineCliConfig} from 'sanity/cli'
 export default defineCliConfig({
   api: {
     projectId: 'smjngdxm',
-    dataset: 'db-dsf-website-9xf65r',
+    dataset: 'db-dsf-website-4kz29f',
   },
   /**
    * Enable auto-updates for studios.
