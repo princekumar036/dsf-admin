@@ -1,8 +1,8 @@
 import {ComposeIcon} from '@sanity/icons'
 import {defineField, defineType} from 'sanity'
 
-export const postType = defineType({
-  name: 'post',
+export const releaseType = defineType({
+  name: 'release',
   type: 'document',
   icon: ComposeIcon,
   fields: [

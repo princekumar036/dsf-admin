@@ -1,6 +1,6 @@
 
 import { archiveType, portableTextType, externalImageType } from './archiveType'
-import { postType } from './postType'
+import { releaseType } from './releaseType'
 import { eventType } from './eventType'
 import { officeBearer } from './officeBearer'
 
@@ -8,7 +8,7 @@ export const schemaTypes = [
   portableTextType,
   externalImageType,
   archiveType,
-  postType,
+  releaseType,
   eventType,
   officeBearer
 ]
