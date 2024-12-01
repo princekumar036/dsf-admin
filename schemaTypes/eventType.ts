@@ -15,7 +15,6 @@ export const eventType = defineType({
       name: 'content',
       type: 'array',
       of: [{type: 'block'}, {type: 'image'}, {type: 'externalImage'}],
-      validation: (Rule) => Rule.required(),
     }),
     defineField({name: 'slug', type: 'slug', options: {source: 'title'}, validation: (Rule) => Rule.required()}),
   ],
@@ -23,7 +22,7 @@ export const eventType = defineType({
     select: {
       title: 'title',
       subtitle: 'date',
-      media: 'featuredMedia',
+      media: 'eventImage',
     },
     prepare(selection) {
       const {title, subtitle, media} = selection

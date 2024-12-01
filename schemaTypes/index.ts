@@ -1,8 +1,11 @@
 
-import { archiveType, portableTextType, externalImageType } from './archiveType'
+import { portableTextType } from './portableTextType'
+import { externalImageType } from './externalImageType'
+import { archiveType } from './archiveType'
 import { releaseType } from './releaseType'
 import { eventType } from './eventType'
 import { officeBearer } from './officeBearer'
+import { membershipType } from './membershipType'
 
 export const schemaTypes = [
   portableTextType,
@@ -10,5 +13,6 @@ export const schemaTypes = [
   archiveType,
   releaseType,
   eventType,
-  officeBearer
+  officeBearer,
+  membershipType
 ]

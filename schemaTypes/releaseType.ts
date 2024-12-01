@@ -29,22 +29,3 @@ export const releaseType = defineType({
     },
   },
 })
-
-export const portableTextType = defineField({
-  name: 'portableText',
-  type: 'array',
-  of: [{type: 'block'}, {type: 'image'}, {type: 'externalImage'}],
-})
-
-export const externalImageType = defineType({
-  name: 'externalImage',
-  title: 'External Image',
-  type: 'object',
-  fields: [
-    {
-      name: 'url',
-      title: 'URL',
-      type: 'url',
-    },
-  ],
-})
