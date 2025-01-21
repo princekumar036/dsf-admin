@@ -19,6 +19,8 @@ export const officeBearer = defineType({
                 {title: 'General Secretary', value: 'General Secretary'},
                 {title: 'Joint Secretary', value: 'Joint Secretary'},
                 {title: 'Treasurer', value: 'Treasurer'},
+                {title: 'Acting President', value: 'Acting President'},
+                {title: 'Acting Secretary', value: 'Acting Secretary'},
             ]
         }
     }),
